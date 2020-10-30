@@ -8,8 +8,8 @@ let buttonH5 = document.getElementById('buttonH5');
 let buttonH6 = document.getElementById('buttonH6');
 
 let red = document.getElementById('red');
-// let buttonP = document.getElementById('buttonP');
-// let buttonStrong = document.getElementById('buttonStrong');
+let buttonP = document.getElementById('buttonP');
+let buttonStrong = document.getElementById('buttonStrong');
 let input = document.getElementById('input');
 let output = document.getElementById('output');
 
@@ -29,8 +29,8 @@ green.addEventListener('click', OnClickgreen);
 blue.addEventListener('click', OnClickblue);
 white.addEventListener('click', OnClickwhite);
 brown.addEventListener('click', OnClickbrown);
-// buttonP.addEventListener('click', OnClickP);
-// buttonStrong.addEventListener('click', OnClickStrong);
+buttonP.addEventListener('click', OnClickP);
+buttonStrong.addEventListener('click', OnClickStrong);
 input.addEventListener('keyup', RenderOutput);
 
 
