@@ -1,6 +1,12 @@
 //Elemek kigyűjtése
 
 let buttonH1 = document.getElementById('buttonH1');
+let buttonH2 = document.getElementById('buttonH2');
+let buttonH3 = document.getElementById('buttonH3');
+let buttonH4 = document.getElementById('buttonH4');
+let buttonH5 = document.getElementById('buttonH5');
+let buttonH6 = document.getElementById('buttonH6');
+
 let buttonP = document.getElementById('buttonP');
 let buttonStrong = document.getElementById('buttonStrong');
 let input = document.getElementById('input');
@@ -10,6 +16,11 @@ RenderOutput();
 
 //Események és eseménykezelők
 buttonH1.addEventListener('click', OnClickH1);
+buttonH2.addEventListener('click', OnClickH2);
+buttonH3.addEventListener('click', OnClickH3);
+buttonH4.addEventListener('click', OnClickH4);
+buttonH5.addEventListener('click', OnClickH5);
+buttonH6.addEventListener('click', OnClickH6);
 buttonP.addEventListener('click', OnClickP);
 buttonStrong.addEventListener('click', OnClickStrong);
 red.addEventListener('click', OnClickRed);
@@ -28,6 +39,36 @@ function OnClickH1() {
     Changer(
         "<h1>", 
         "</h1>"
+        );
+}
+function OnClickH2() {
+    Changer(
+        "<h2>", 
+        "</h2>"
+        );
+}
+function OnClickH3() {
+    Changer(
+        "<h3>", 
+        "</h3>"
+        );
+}
+function OnClickH4() {
+    Changer(
+        "<h4>", 
+        "</h4>"
+        );
+}
+function OnClickH5() {
+    Changer(
+        "<h5>", 
+        "</h5>"
+        );
+}
+function OnClickH6() {
+    Changer(
+        "<h6>", 
+        "</h6>"
         );
 }
 
