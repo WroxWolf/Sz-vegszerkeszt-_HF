@@ -7,8 +7,9 @@ let buttonH4 = document.getElementById('buttonH4');
 let buttonH5 = document.getElementById('buttonH5');
 let buttonH6 = document.getElementById('buttonH6');
 
-let buttonP = document.getElementById('buttonP');
-let buttonStrong = document.getElementById('buttonStrong');
+let red = document.getElementById('red');
+// let buttonP = document.getElementById('buttonP');
+// let buttonStrong = document.getElementById('buttonStrong');
 let input = document.getElementById('input');
 let output = document.getElementById('output');
 
@@ -21,9 +22,15 @@ buttonH3.addEventListener('click', OnClickH3);
 buttonH4.addEventListener('click', OnClickH4);
 buttonH5.addEventListener('click', OnClickH5);
 buttonH6.addEventListener('click', OnClickH6);
-buttonP.addEventListener('click', OnClickP);
-buttonStrong.addEventListener('click', OnClickStrong);
+
 red.addEventListener('click', OnClickRed);
+yellow.addEventListener('click', OnClickyellow);
+green.addEventListener('click', OnClickgreen);
+blue.addEventListener('click', OnClickblue);
+white.addEventListener('click', OnClickwhite);
+brown.addEventListener('click', OnClickbrown);
+// buttonP.addEventListener('click', OnClickP);
+// buttonStrong.addEventListener('click', OnClickStrong);
 input.addEventListener('keyup', RenderOutput);
 
 
@@ -85,7 +92,32 @@ function OnClickStrong() {
 }
 
 function OnClickRed() {
-    let statTag = "<span style='color: red; font-weight: bold'>";
+    let statTag = "<span style='color: red;'>";
+    let endTag = "</span>";
+    Changer(statTag, endTag);
+}
+function OnClickyellow() {
+    let statTag = "<span style='color: yellow;'>";
+    let endTag = "</span>";
+    Changer(statTag, endTag);
+}
+function OnClickgreen() {
+    let statTag = "<span style='color: green;'>";
+    let endTag = "</span>";
+    Changer(statTag, endTag);
+}
+function OnClickblue() {
+    let statTag = "<span style='color: blue;'>";
+    let endTag = "</span>";
+    Changer(statTag, endTag);
+}
+function OnClickwhite() {
+    let statTag = "<span style='color: white;'>";
+    let endTag = "</span>";
+    Changer(statTag, endTag);
+}
+function OnClickbrown() {
+    let statTag = "<span style='color: brown;'>";
     let endTag = "</span>";
     Changer(statTag, endTag);
 }
