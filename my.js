@@ -11,6 +11,8 @@ let red = document.getElementById('red');
 let buttonP = document.getElementById('buttonP');
 let Link = document.getElementById('buttonLink')
 let buttonStrong = document.getElementById('buttonStrong');
+let buttonOl = document.getElementById('buttonOl');
+let buttonUl = document.getElementById('buttonUl');
 
 let buttonB = document.getElementById('buttonB');
 let buttonI = document.getElementById('buttonI');
@@ -49,6 +51,8 @@ white.addEventListener('click', OnClickwhite);
 brown.addEventListener('click', OnClickbrown);
 buttonP.addEventListener('click', OnClickP);
 Link.addEventListener('click',OnClickLink);
+buttonOl.addEventListener('click',onClickOl);
+buttonUl.addEventListener('click',onClickUl);
 
 buttonStrong.addEventListener('click', OnClickStrong);
 input.addEventListener('keyup', RenderOutput);
@@ -152,6 +156,16 @@ function OnClickLink() {
 function OnClickStrong() {
     let statTag = "<strong>";
     let endTag = "</strong>";
+    Changer(statTag, endTag);
+}
+function onClickOl() {
+    let statTag = "<ol><li>";
+    let endTag = "</li></ol>";
+    Changer(statTag, endTag);
+}
+function onClickUl() {
+    let statTag = "<ul><li>";
+    let endTag = "</li></ul>";
     Changer(statTag, endTag);
 }
 
