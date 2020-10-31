@@ -9,6 +9,7 @@ let buttonH6 = document.getElementById('buttonH6');
 
 let red = document.getElementById('red');
 let buttonP = document.getElementById('buttonP');
+let Link = document.getElementById('buttonLink')
 let buttonStrong = document.getElementById('buttonStrong');
 let input = document.getElementById('input');
 let output = document.getElementById('output');
@@ -30,6 +31,8 @@ blue.addEventListener('click', OnClickblue);
 white.addEventListener('click', OnClickwhite);
 brown.addEventListener('click', OnClickbrown);
 buttonP.addEventListener('click', OnClickP);
+Link.addEventListener('click',OnClickLink);
+
 buttonStrong.addEventListener('click', OnClickStrong);
 input.addEventListener('keyup', RenderOutput);
 
@@ -82,6 +85,11 @@ function OnClickH6() {
 function OnClickP() {
     let statTag = "<p>";
     let endTag = "</p>";
+    Changer(statTag, endTag);
+}
+function OnClickLink() {
+    let statTag = "<a href='#'>";
+    let endTag = "</a>";
     Changer(statTag, endTag);
 }
 
