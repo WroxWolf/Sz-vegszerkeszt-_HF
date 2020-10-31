@@ -11,6 +11,15 @@ let red = document.getElementById('red');
 let buttonP = document.getElementById('buttonP');
 let Link = document.getElementById('buttonLink')
 let buttonStrong = document.getElementById('buttonStrong');
+
+let buttonB = document.getElementById('buttonB');
+let buttonI = document.getElementById('buttonI');
+let buttonSup = document.getElementById('buttonSup');
+let buttonSub = document.getElementById('buttonSub');
+let buttonS = document.getElementById('buttonS');
+let buttonU = document.getElementById('buttonU');
+let buttonMark = document.getElementById('buttonMark');
+
 let input = document.getElementById('input');
 let output = document.getElementById('output');
 
@@ -23,6 +32,14 @@ buttonH3.addEventListener('click', OnClickH3);
 buttonH4.addEventListener('click', OnClickH4);
 buttonH5.addEventListener('click', OnClickH5);
 buttonH6.addEventListener('click', OnClickH6);
+
+buttonB.addEventListener('click', OnClickB);
+buttonI.addEventListener('click', OnClickI);
+buttonSup.addEventListener('click', OnClickSup);
+buttonSub.addEventListener('click', OnClickSub);
+buttonS.addEventListener('click', OnClickS);
+buttonU.addEventListener('click', OnClickU);
+buttonMark.addEventListener('click', OnClickMark);
 
 red.addEventListener('click', OnClickRed);
 yellow.addEventListener('click', OnClickyellow);
@@ -87,6 +104,45 @@ function OnClickP() {
     let endTag = "</p>";
     Changer(statTag, endTag);
 }
+
+function OnClickB() {
+    let statTag = "<b>";
+    let endTag = "</b>";
+    Changer(statTag, endTag);
+}
+function OnClickI() {
+    let statTag = "<i>";
+    let endTag = "</i>";
+    Changer(statTag, endTag);
+}
+function OnClickSup() {
+    let statTag = "<sup>";
+    let endTag = "</sup>";
+    Changer(statTag, endTag);
+}
+function OnClickSub() {
+    let statTag = "<sub>";
+    let endTag = "</sub>";
+    Changer(statTag, endTag);
+}
+function OnClickS() {
+    let statTag = "<s>";
+    let endTag = "</s>";
+    Changer(statTag, endTag);
+}
+function OnClickU() {
+    let statTag = "<u>";
+    let endTag = "</u>";
+    Changer(statTag, endTag);
+}
+function OnClickMark() {
+    let statTag = "<mark>";
+    let endTag = "</mark>";
+    Changer(statTag, endTag);
+}
+
+
+
 function OnClickLink() {
     let statTag = "<a href='#'>";
     let endTag = "</a>";
